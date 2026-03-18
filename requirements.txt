@@ -1,0 +1,22 @@
+
+# Install for the current Python interpreter
+
+python -m pip install --upgrade pip
+
+python -m pip install beautifulsoup4
+
+# install below in powershell
+irm https://ollama.com/install.ps1 | iex
+
+pip install requests beautifulsoup4 ollama
+
+ollama run phi
+
+# confirm interpreter used by the terminal
+python -c "import sys; print(sys.executable)"
+
+# confirm beautifulsoup4 is available
+python -m pip show beautifulsoup4
+# or
+python -c "import bs4; print(bs4.__version__)"
+
